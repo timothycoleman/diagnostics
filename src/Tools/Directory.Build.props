@@ -12,10 +12,10 @@
   <Choose>
     <When Condition="'$(BundleTools)' == 'true'">
       <PropertyGroup>
-        <SelfContained>false</SelfContained>
+        <SelfContained>true</SelfContained>
         <PublishDir>$(BundledToolsPath)$(Configuration)\$(RuntimeIdentifier)\</PublishDir>
         <PublishSingleFile>true</PublishSingleFile>
-        <PublishTrimmed>$(SelfContained)</PublishTrimmed>
+        <PublishTrimmed>false</PublishTrimmed>
       </PropertyGroup>
     </When>
     <Otherwise>
